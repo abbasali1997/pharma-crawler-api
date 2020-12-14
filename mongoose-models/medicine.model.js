@@ -19,10 +19,18 @@ const medicineSchema = mongoose.Schema({
         type: String,
         default: null
     },
+	type: {
+		type: String,
+		default: null
+    },
 	image: {
 		type: String,
 		default: null
-	}
+    },
+    site: {
+        type: String,
+        default: null
+    }
 })
 
 const Medicine = mongoose.model("Medicine", medicineSchema);
